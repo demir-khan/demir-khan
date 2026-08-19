@@ -1,3 +1,4 @@
+import json
 import os
 import requests
 from lxml import etree
@@ -13,6 +14,7 @@ HEADERS = {
 
 GRAPHQL_URL = "https://api.github.com/graphql"
 
+
 def graphql(query, variables):
     response = requests.post(
         GRAPHQL_URL,
@@ -21,19 +23,26 @@ def graphql(query, variables):
         timeout=30,
     )
     response.raise_for_status()
+
     payload = response.json()
+
     if payload.get("errors"):
         raise RuntimeError(payload["errors"])
+
     return payload["data"]
+
 
 def get_stats():
     query = """
     query($login: String!) {
       user(login: $login) {
-        followers { totalCount }
+        followers {
+          totalCount
+        }
+
         repositories(
-          first: 100,
-          ownerAffiliations: OWNER,
+          first: 100
+          ownerAffiliations: OWNER
           privacy: PUBLIC
         ) {
           totalCount
@@ -41,6 +50,7 @@ def get_stats():
             stargazerCount
           }
         }
+
         contributionsCollection {
           contributionCalendar {
             totalContributions
@@ -49,30 +59,72 @@ def get_stats():
       }
     }
     """
+
     user = graphql(query, {"login": USERNAME})["user"]
-    repos = user["repositories"]["totalCount"]
-    followers = user["followers"]["totalCount"]
-    stars = sum(repo["stargazerCount"] for repo in user["repositories"]["nodes"])
-    contributions = user["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+
     return {
-        "repo_data": repos,
-        "follower_data": followers,
-        "star_data": stars,
-        "contrib_data": contributions,
+        "repo_data": user["repositories"]["totalCount"],
+        "follower_data": user["followers"]["totalCount"],
+        "star_data": sum(
+            repo["stargazerCount"]
+            for repo in user["repositories"]["nodes"]
+        ),
+        "contrib_data": user["contributionsCollection"][
+            "contributionCalendar"
+        ]["totalContributions"],
     }
 
-def update_svg(path, stats):
+
+def load_config():
+    with open("profile-config.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def replace_text(root, element_id, value):
+    element = root.find(f".//*[@id='{element_id}']")
+
+    if element is not None:
+        element.text = str(value)
+
+
+def update_svg(path, stats, config):
     parser = etree.XMLParser(remove_blank_text=False)
+
     tree = etree.parse(path, parser)
     root = tree.getroot()
+
     for element_id, value in stats.items():
-        element = root.find(f".//*[@id='{element_id}']")
-        if element is not None:
-            element.text = f"{value:,}"
-    tree.write(path, encoding="UTF-8", xml_declaration=True)
+        replace_text(root, element_id, f"{value:,}")
+
+    mapping = {
+        "handle_data": config.get("handle", ""),
+        "subtitle_data": config.get("subtitle", ""),
+        "current_data": config.get("current", ""),
+        "location_data": config.get("location", ""),
+        "focus_data": config.get("focus", ""),
+        "languages_data": config.get("languages", ""),
+        "frameworks_data": config.get("frameworks", ""),
+        "tools_data": config.get("tools", ""),
+        "interests_data": config.get("interests", ""),
+        "linkedin_data": config.get("linkedin", ""),
+        "email_data": config.get("email", ""),
+    }
+
+    for element_id, value in mapping.items():
+        replace_text(root, element_id, value)
+
+    tree.write(
+        path,
+        encoding="UTF-8",
+        xml_declaration=True,
+    )
+
 
 if __name__ == "__main__":
     stats = get_stats()
+    config = load_config()
+
     for path in ("dark_mode.svg", "light_mode.svg"):
-        update_svg(path, stats)
+        update_svg(path, stats, config)
+
     print(stats)
