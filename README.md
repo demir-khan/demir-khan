@@ -1,5 +1,7 @@
-## Hi there 👋
+## Hi there 👋 I'm Demir
 
+- CS @ Warwick | 2024-2027
+- SWE Intern @ Visa | Summer 2026
 <!--
 **demir-khan/demir-khan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
