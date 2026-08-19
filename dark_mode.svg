@@ -55,11 +55,11 @@
   <tspan class="muted"> ──────────────────────────────────────────</tspan>
   <tspan x="390" y="378" class="key">Repos</tspan>
   <tspan class="muted"> ........ </tspan>
-  <tspan id="repo_data" class="value">0</tspan>
+  <tspan id="repo_data" class="value">6</tspan>
   
   <tspan x="650" y="378" class="key">Followers</tspan>
   <tspan class="muted"> .... </tspan>
-  <tspan id="follower_data" class="value">0</tspan>
+  <tspan id="follower_data" class="value">11</tspan>
   
   <tspan x="390" y="406" class="key">Stars</tspan>
   <tspan class="muted"> ........ </tspan>
@@ -67,7 +67,7 @@
   
   <tspan x="650" y="406" class="key">Contributions</tspan>
   <tspan class="muted"> . </tspan>
-  <tspan id="contrib_data" class="value">0</tspan>
+  <tspan id="contrib_data" class="value">21</tspan>
 
   <tspan x="390" y="446" class="fg" font-weight="700">contact</tspan>
   <tspan class="muted"> ─────────────────────────────────────────</tspan>
