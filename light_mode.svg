@@ -24,11 +24,11 @@
   <tspan x="34" y="204">        ╰──────┬───────╯</tspan>
   <tspan x="34" y="226">               │</tspan>
   <tspan x="34" y="248">     ╭─────────┴──────────╮</tspan>
-  <tspan x="34" y="270">     │ Visa / Currencycloud│</tspan>
-  <tspan x="34" y="292">     │ backend + payments  │</tspan>
+  <tspan x="34" y="270">     │Visa / Currencycloud│</tspan>
+  <tspan x="34" y="292">     │ backend + payments │</tspan>
   <tspan x="34" y="314">     ╰─────────┬──────────╯</tspan>
   <tspan x="34" y="336">               │</tspan>
-  <tspan x="34" y="358">      Python • Scala • TS</tspan>
+  <tspan x="34" y="358">            Python</tspan>
   <tspan x="34" y="380">          ML • APIs</tspan>
   <tspan x="34" y="402">          ┌────────┐</tspan>
   <tspan x="34" y="424">          │ build. │</tspan>
