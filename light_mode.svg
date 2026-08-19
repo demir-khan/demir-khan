@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520"
+     font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16">
+<style>
+  .bg { fill: #ffffff; }
+  .fg { fill: #1f2328; }
+  .muted { fill: #8c959f; }
+  .key { fill: #953800; }
+  .value { fill: #0550ae; }
+  .green { fill: #1a7f37; }
+  .red { fill: #cf222e; }
+  text, tspan { white-space: pre; }
+</style>
+
+<rect class="bg" width="1000" height="520" rx="18"/>
+
+<text x="34" y="50" class="fg" font-size="15">
+  <tspan x="34" y="50">        ╭──────────────╮</tspan>
+  <tspan x="34" y="72">        │  DK // DEV   │</tspan>
+  <tspan x="34" y="94">        ╰──────┬───────╯</tspan>
+  <tspan x="34" y="116">               │</tspan>
+  <tspan x="34" y="138">        ╭──────┴───────╮</tspan>
+  <tspan x="34" y="160">        │   Warwick    │</tspan>
+  <tspan x="34" y="182">        │ Computer Sci │</tspan>
+  <tspan x="34" y="204">        ╰──────┬───────╯</tspan>
+  <tspan x="34" y="226">               │</tspan>
+  <tspan x="34" y="248">     ╭─────────┴──────────╮</tspan>
+  <tspan x="34" y="270">     │ Visa / Currencycloud│</tspan>
+  <tspan x="34" y="292">     │ backend + payments  │</tspan>
+  <tspan x="34" y="314">     ╰─────────┬──────────╯</tspan>
+  <tspan x="34" y="336">               │</tspan>
+  <tspan x="34" y="358">      Python • Scala • TS</tspan>
+  <tspan x="34" y="380">      ML • Systems • APIs</tspan>
+  <tspan x="34" y="402">          ┌────────┐</tspan>
+  <tspan x="34" y="424">          │ build. │</tspan>
+  <tspan x="34" y="446">          └────────┘</tspan>
+</text>
+
+<text x="390" y="42" class="fg">
+  <tspan x="390" y="42" font-weight="700">demir@github</tspan>
+  <tspan class="muted"> ─────────────────────────────────────</tspan>
+
+  <tspan x="390" y="74" class="key">Role</tspan><tspan class="muted"> .............. </tspan><tspan class="value">CS @ Warwick</tspan>
+  <tspan x="390" y="100" class="key">Current</tspan><tspan class="muted"> ........... </tspan><tspan class="value">Visa / Currencycloud SWE</tspan>
+  <tspan x="390" y="126" class="key">Location</tspan><tspan class="muted"> .......... </tspan><tspan class="value">United Kingdom</tspan>
+  <tspan x="390" y="152" class="key">Focus</tspan><tspan class="muted"> ............. </tspan><tspan class="value">Backend • ML • Systems</tspan>
+
+  <tspan x="390" y="194" class="fg" font-weight="700">stack</tspan>
+  <tspan class="muted"> ───────────────────────────────────────────</tspan>
+  <tspan x="390" y="226" class="key">Languages</tspan><tspan class="muted"> ......... </tspan><tspan class="value">Python, Java, TypeScript, Scala, C</tspan>
+  <tspan x="390" y="252" class="key">Frameworks</tspan><tspan class="muted"> ........ </tspan><tspan class="value">FastAPI, React, PyTorch, Supabase</tspan>
+  <tspan x="390" y="278" class="key">Tools</tspan><tspan class="muted"> ............. </tspan><tspan class="value">Git, K8s, Istio, PostgreSQL, Neo4j</tspan>
+  <tspan x="390" y="304" class="key">Interests</tspan><tspan class="muted"> ......... </tspan><tspan class="value">Fintech, agents, distributed systems</tspan>
+
+  <tspan x="390" y="346" class="fg" font-weight="700">github</tspan>
+  <tspan class="muted"> ──────────────────────────────────────────</tspan>
+  <tspan x="390" y="378" class="key">Repos</tspan><tspan class="muted"> ............. </tspan><tspan id="repo_data" class="value">0</tspan>
+  <tspan x="515" y="378" class="key">Followers</tspan><tspan class="muted"> ..... </tspan><tspan id="follower_data" class="value">0</tspan>
+  <tspan x="390" y="404" class="key">Stars</tspan><tspan class="muted"> ............. </tspan><tspan id="star_data" class="value">0</tspan>
+  <tspan x="515" y="404" class="key">Contributions</tspan><tspan class="muted"> . </tspan><tspan id="contrib_data" class="value">0</tspan>
+
+  <tspan x="390" y="446" class="fg" font-weight="700">contact</tspan>
+  <tspan class="muted"> ─────────────────────────────────────────</tspan>
+  <tspan x="390" y="478" class="key">LinkedIn</tspan><tspan class="muted"> ......... </tspan><tspan class="value">YOUR_LINKEDIN_HANDLE</tspan>
+  <tspan x="390" y="504" class="key">Email</tspan><tspan class="muted"> ............ </tspan><tspan class="value">YOUR_EMAIL</tspan>
+</text>
+</svg>

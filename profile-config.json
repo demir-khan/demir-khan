@@ -1,0 +1,14 @@
+{
+  "name": "Demir Khan",
+  "handle": "demir@github",
+  "subtitle": "Computer Science @ University of Warwick",
+  "current": "Software Engineering Intern @ Visa / Currencycloud",
+  "focus": "Backend systems, ML, distributed systems",
+  "languages": "Python, Java, TypeScript, Scala, C, Swift",
+  "frameworks": "FastAPI, React, PyTorch, Supabase",
+  "tools": "Git, Kubernetes, Istio, PostgreSQL, Neo4j",
+  "interests": "Systems, ML, fintech, agents",
+  "location": "United Kingdom",
+  "linkedin": "YOUR_LINKEDIN_HANDLE",
+  "email": "YOUR_EMAIL"
+}
