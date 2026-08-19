@@ -8,6 +8,9 @@ on:
     branches: [main]
     paths:
       - "today.py"
+      - "profile-config.json"
+      - "dark_mode.svg"
+      - "light_mode.svg"
       - ".github/workflows/update-profile.yml"
 
 permissions:
