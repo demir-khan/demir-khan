@@ -1,0 +1,42 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "today.py"
+      - ".github/workflows/update-profile.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests lxml
+
+      - name: Update SVG stats
+        env:
+          ACCESS_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          USER_NAME: ${{ github.repository_owner }}
+        run: python today.py
+
+      - name: Commit changed stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update profile stats"
+          git push
