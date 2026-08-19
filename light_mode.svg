@@ -67,7 +67,7 @@
   
   <tspan x="650" y="406" class="key">Contributions</tspan>
   <tspan class="muted"> . </tspan>
-  <tspan id="contrib_data" class="value">22</tspan>
+  <tspan id="contrib_data" class="value">23</tspan>
 
   <tspan x="390" y="446" class="fg" font-weight="700">contact</tspan>
   <tspan class="muted"> ─────────────────────────────────────────</tspan>
