@@ -29,7 +29,7 @@
   <tspan x="34" y="314">     ╰─────────┬──────────╯</tspan>
   <tspan x="34" y="336">               │</tspan>
   <tspan x="34" y="358">      Python • Scala • TS</tspan>
-  <tspan x="34" y="380">      ML • Systems • APIs</tspan>
+  <tspan x="34" y="380">          ML • APIs</tspan>
   <tspan x="34" y="402">          ┌────────┐</tspan>
   <tspan x="34" y="424">          │ build. │</tspan>
   <tspan x="34" y="446">          └────────┘</tspan>
@@ -40,16 +40,16 @@
   <tspan class="muted"> ─────────────────────────────────────</tspan>
 
   <tspan x="390" y="74" class="key">Role</tspan><tspan class="muted"> .............. </tspan><tspan class="value">CS @ Warwick</tspan>
-  <tspan x="390" y="100" class="key">Current</tspan><tspan class="muted"> ........... </tspan><tspan class="value">Visa / Currencycloud SWE</tspan>
+  <tspan x="390" y="100" class="key">Current</tspan><tspan class="muted"> ........... </tspan><tspan class="value">Visa / Currencycloud SWE Intern</tspan>
   <tspan x="390" y="126" class="key">Location</tspan><tspan class="muted"> .......... </tspan><tspan class="value">United Kingdom</tspan>
-  <tspan x="390" y="152" class="key">Focus</tspan><tspan class="muted"> ............. </tspan><tspan class="value">Backend • ML • Systems</tspan>
+  <tspan x="390" y="152" class="key">Focus</tspan><tspan class="muted"> ............. </tspan><tspan class="value">Backend • ML</tspan>
 
   <tspan x="390" y="194" class="fg" font-weight="700">stack</tspan>
   <tspan class="muted"> ───────────────────────────────────────────</tspan>
-  <tspan x="390" y="226" class="key">Languages</tspan><tspan class="muted"> ......... </tspan><tspan class="value">Python, Java, TypeScript, Scala, C</tspan>
-  <tspan x="390" y="252" class="key">Frameworks</tspan><tspan class="muted"> ........ </tspan><tspan class="value">FastAPI, React, PyTorch, Supabase</tspan>
-  <tspan x="390" y="278" class="key">Tools</tspan><tspan class="muted"> ............. </tspan><tspan class="value">Git, K8s, Istio, PostgreSQL, Neo4j</tspan>
-  <tspan x="390" y="304" class="key">Interests</tspan><tspan class="muted"> ......... </tspan><tspan class="value">Fintech, agents, distributed systems</tspan>
+  <tspan x="390" y="226" class="key">Languages</tspan><tspan class="muted"> ......... </tspan><tspan class="value">Python, Java, JavaScript, Haskell</tspan>
+  <tspan x="390" y="252" class="key">Frameworks</tspan><tspan class="muted"> ........ </tspan><tspan class="value">FastAPI, React, PyTorch</tspan>
+  <tspan x="390" y="278" class="key">Tools</tspan><tspan class="muted"> ............. </tspan><tspan class="value">Git, Istio, PostgreSQL, Neo4j</tspan>
+  <tspan x="390" y="304" class="key">Interests</tspan><tspan class="muted"> ......... </tspan><tspan class="value">ML, Fintech, agents</tspan>
 
   <tspan x="390" y="346" class="fg" font-weight="700">github</tspan>
   <tspan class="muted"> ──────────────────────────────────────────</tspan>
@@ -60,7 +60,7 @@
 
   <tspan x="390" y="446" class="fg" font-weight="700">contact</tspan>
   <tspan class="muted"> ─────────────────────────────────────────</tspan>
-  <tspan x="390" y="478" class="key">LinkedIn</tspan><tspan class="muted"> ......... </tspan><tspan class="value">YOUR_LINKEDIN_HANDLE</tspan>
-  <tspan x="390" y="504" class="key">Email</tspan><tspan class="muted"> ............ </tspan><tspan class="value">YOUR_EMAIL</tspan>
+  <tspan x="390" y="478" class="key">LinkedIn</tspan><tspan class="muted"> ......... </tspan><tspan class="value">https://www.linkedin.com/in/demir-khan/</tspan>
+  <tspan x="390" y="504" class="key">Email</tspan><tspan class="muted"> ............ </tspan><tspan class="value"></tspan>
 </text>
 </svg>
