@@ -59,7 +59,7 @@
   
   <tspan x="650" y="378" class="key">Followers</tspan>
   <tspan class="muted"> .... </tspan>
-  <tspan id="follower_data" class="value">11</tspan>
+  <tspan id="follower_data" class="value">10</tspan>
   
   <tspan x="390" y="406" class="key">Stars</tspan>
   <tspan class="muted"> ........ </tspan>
